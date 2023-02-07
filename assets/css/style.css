@@ -1,0 +1,377 @@
+
+/* Universal CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul li {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+:root {
+    --primary: #147e90;
+}
+
+/* Universal CSS End */
+
+
+/* Navbar Part Start*/
+.navbar {
+    padding: 1.2rem 0;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    z-index: 99;
+}
+.nav_bg_sticky{
+    transition: 0.4s;
+    background: var(--primary);
+    padding: 0.5rem 0 !important;
+    border-bottom: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.navbar .navbar-brand img {
+    width: 60px;
+    height: auto;
+}
+.navbar-nav .nav-item {
+    margin-right: 0.8rem;
+}
+.navbar-nav .nav-item .nav-link {
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.22rem;
+    color: #fff;
+    transition: 0.4s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #00b9da;
+}
+.navbar .search i {
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+/* Navbar Part End*/
+
+
+/* Slider Part Start*/
+.slider {
+    background: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)), url(../img/slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+.slider h1 {
+    font-size: 3rem;
+}
+.slider p {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    margin-top: 1.3rem;
+    margin-bottom: 2.3rem;
+}
+.slider .slider_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.slider a {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    padding: 0.55rem 1.45rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    transition: 0.4s;
+}
+.slider a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+/* Slider Part End*/
+
+
+/* About Part Start*/
+.about {
+    padding: 3.5rem 1rem;
+    background: var(--primary);
+}
+.about .about_content p {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-top: 1.2rem;
+}
+.about .about_content .para2 {
+    margin-bottom: 2rem;
+}
+.about .about_content a {
+    color: var(--primary);
+    background: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+.about .about_content a:hover {
+    color: #fff;
+    background: #106270;
+}
+/* About Part End*/
+
+
+/* Service Part Start*/
+.service {
+    padding: 4rem  0;
+}
+.service .service_heading h2 {
+    color: var(--primary);
+}
+.service .service_content {
+    padding: 15px;
+    border: 15px solid transparent;
+    border-image: url(../img/service.jpg) 30% round;
+}
+.service .service_content h4 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+    color: var(--primary);
+}
+.service .service_content p {
+    font-size: 0.85rem;
+}
+.service .service_content a  {
+    font-size: 0.9rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    transition: 0.4s;
+}
+.service .service_content a:hover {
+    color: var(--primary);
+}
+/* Service Part End*/
+
+
+
+/* Award Part Start*/
+.award {padding: 2rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(../img/award.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #fff;
+}
+.award h4 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.award h6 {
+    margin-bottom: 0;
+}
+/* Award Part End*/
+
+
+/* Portfolio Part End*/
+.portfolio {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    background: var(--primary);
+}
+.portfolio .portfolio_heading .lines .line1,
+.portfolio .portfolio_heading .lines .line2,
+.portfolio .portfolio_heading .lines .line3 {
+    height: 2px;
+    width: 1.8rem;
+    background: #fff;
+}
+.portfolio .portfolio_heading .lines .line2 {
+    background: #fec600;
+    width: 2.5rem;
+}
+.portfolio_image {
+    position: relative;
+}
+.portfolio_image:hover .img-hover {
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio_image .img-hover {
+    height: 100%;
+    width: 100%;
+    background: #00000091;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.portfolio_image .img-hover a i {
+    font-size: 1rem;
+    color: var(--primary);
+    padding: 1.2rem;
+    background: #fff;
+    border-radius: 50%;
+}.portfolio_image .img-hover p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.portfolio .p-button {
+    color: var(--primary);
+    background: #fff;
+    font-size: 1.15rem;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.25rem;
+    transition: 0.4s;
+}
+.portfolio .p-button:hover {
+    color: #fff;
+    background: #000;
+}
+/* Portfolio Part End*/
+
+
+/* Team Part Start*/
+.team {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+}
+.team .team_heading h2 {
+    color: var(--primary);
+}
+.team .team_heading .lines .line1,
+.team .team_heading .lines .line2,
+.team .team_heading .lines .line3 {
+    height: 2px;
+    width: 1.8rem;
+    background: #000;
+}
+.team .team_heading .lines .line2 {
+    background: var(--primary);
+    width: 2.5rem;
+}
+.team .team-image {
+    position: relative;
+}
+.team .team-image:hover .team_hover {
+    opacity: 1;
+    visibility: visible;
+}
+.team .team-image .team_hover {
+    height: 100%;
+    width: 100%;
+    background: #00000091;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+}
+.team .team-image .team_hover a i {
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.team .team-image .team_hover a i:hover {
+    background: #d33472;
+    border-color: #d33472;
+}
+.team .team-image .team_hover h6 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.team .p-button {
+    color: #fff;
+    background: var(--primary);
+    font-size: 1.15rem;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.25rem;
+    transition: 0.4s;
+}
+.team .p-button:hover {
+    color: #fff;
+    background: #000;
+}
+/* Team Part End*/
+
+
+/* FAQ Part End*/
+.faq {
+    padding: 3rem 0;
+    background: var(--primary);
+}
+.faq .faq_heading .lines .line1,
+.faq .faq_heading .lines .line2,
+.faq .faq_heading .lines .line3 {
+    height: 2px;
+    width: 1rem;
+    background: #fff;
+}
+.faq .faq_heading .lines .line2 {
+    background: #fec600;
+    width: 2rem;
+}
+/* FAQ Part End*/
+
+
+
+
+
+
+/* Footer Part Start*/
+.footer {
+    background: #444;
+    padding: 0.8rem 0;
+}
+.footer p {
+    margin-bottom: 0;
+}
+.footer a {
+    color: #fff;
+    font-weight: 700;
+}
+.footer a:hover {
+    color: var(--primary);
+}
+/* Footer Part End*/
+
+

@@ -1,0 +1,62 @@
+
+
+/* Medium */
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+   .slider p {
+      width: 80%;
+  }
+  .team .team-image .team_hover {
+   padding: 0.2rem !important;
+  }
+  .team .team-image .team_hover .social_icon {
+   gap: 5px !important;
+  }
+  .team .team-image .team_hover .social_icon a i {
+   font-size: 0.9rem;
+   padding: 0.5rem;
+  }
+  .team .team-image .team_hover .team_name {
+   margin-top: 1rem;
+  }
+  .team .team-image .team_hover h6 {
+   font-size: 1.15rem;
+  }
+  .team .team-image .team_hover p {
+   font-size: 0.9rem;
+  } 
+}
+
+
+
+/* Small Screen */
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+
+   .slider p {
+      width: 90%;
+  }
+}
+
+
+
+
+/* Extra Small */
+
+@media (max-width: 575.99px) {
+
+   .slider {
+      padding: 8rem 0;
+   }
+   .slider p {
+      width: 100%;
+  }
+  .slider .slider_button {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem;
+}
+}
